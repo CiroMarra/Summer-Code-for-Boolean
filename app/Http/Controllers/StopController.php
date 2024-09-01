@@ -10,7 +10,7 @@ class StopController extends Controller
 {
     public function index(Trip $trip)
     {
-        $stops = $trip->stops; // Ottieni tutte le fermate del viaggio
+        $stops = $trip->stops; 
         return view('stops.index', compact('trip', 'stops'));
     }
 
