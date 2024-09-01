@@ -1,0 +1,91 @@
+body {
+    background-image: url('https://giffiles.alphacoders.com/214/214299.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Contenitore di benvenuto */
+.welcome-container {
+    position: relative; /* Necessario per posizionare l'overlay */
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff; /* Cambia il colore del testo se necessario */
+}
+
+/* Overlay semi-trasparente */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2040px;
+    height: 810px;
+    background-color: rgba(255, 255, 255, 0.8); /* Bianco semi-trasparente */
+    border-radius: 8px; /* Deve corrispondere al bordo del contenitore */
+    z-index: 1; /* Posiziona l'overlay sotto il contenuto */
+}
+
+/* Posizionamento del contenuto sopra l'overlay */
+.welcome-container > h1,
+.welcome-container > p,
+.welcome-container > div {
+    position: relative;
+    z-index: 2; /* Posiziona il contenuto sopra l'overlay */
+}
+
+.trip-image {
+    max-height: 400px; /* Imposta l'altezza massima desiderata */
+    width: auto; /* Mantiene la proporzione dell'immagine */
+    display: block; /* Assicura che l'immagine sia visualizzata come un blocco */
+    margin: 0 auto; /* Centra l'immagine */
+}
+
+
+/* Rating */ 
+
+
+    .completed {
+        text-decoration: line-through;
+    }
+
+    .rating {
+        display: inline-block;
+    }
+
+    .star {
+        font-size: 24px;
+        cursor: pointer;
+        color: black; /* Colore predefinito */
+    }
+
+    .star.selected {
+        color: gold; /* Colore quando selezionato */
+    }
+
+    .trip-image {
+        max-height: 400px; /* Limite massimo dell'altezza dell'immagine */
+        width: auto; /* Mantiene la proporzione dell'immagine */
+        display: block; /* Visualizza l'immagine come blocco */
+        margin: 0 auto; /* Centra l'immagine */
+    }
+
+
+    .text-purple {
+        color: blueviolet;
+    }
+
+
+    .dashboard-header {
+        margin-bottom: 2rem;
+    }
+    .dashboard-content {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    }
+    .logout-button, .reset-password-button {
+        margin-top: 1rem;
+    }

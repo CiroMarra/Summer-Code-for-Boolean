@@ -1,0 +1,12 @@
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+.dashboard-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.logout-button, .reset-password-button {
+    margin-top: 1rem;
+}
